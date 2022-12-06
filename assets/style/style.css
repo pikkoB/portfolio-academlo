@@ -12,7 +12,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 img{
@@ -235,7 +235,7 @@ align-items: center;
 }
 .cont-img-portafolio{
     height: 13rem;
-    width: 80%;
+     min-width: 60%;
     max-width: 25rem;
     background-color: #fff;
     padding: 1rem ;
@@ -253,7 +253,7 @@ align-items: center;
 }
 .contact{
     background-color: #242635;
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -294,7 +294,7 @@ align-items: center;
     position: absolute;
     width: 20%;
     top: 40px;
-    right: 0;
+    right: 060px;
     height: calc( 50vh - 80px );
     padding: 1rem;
     display: flex;
@@ -304,6 +304,9 @@ align-items: center;
     align-content: flex-start;
     transition: left .5s linear;
     color: #E5E5E5;
+}
+.nav-active{
+display: none;
 }
 
 .nav-item{
@@ -338,18 +341,22 @@ align-items: center;
     .navbar-menu{
         display: none;
     }
+
+    .nav-active{
+        display: flex;
+        }
     .header{
         background-color: var(--dark-bluegrey);
         background-image: url(../Vectores/Rectangle\ 33-1.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 70vw -150px;
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap;
     }
     .header-content{
         display: flex;
-        width: 100%;
+        justify-content: end;
     }
     
     .header-information{
@@ -383,7 +390,13 @@ align-items: center;
             display: flex;
         }
         
-        
+        .content-experience{
+            gap: 6rem;
+           
+        }
+        .exp-central{
+            padding: 2rem;
+        }
         .social-container{
             display: flex;
             padding-left: 15rem;
@@ -428,6 +441,7 @@ font-size: 22px;
 .content-experience{
 align-items: center;
 padding-left: 30%;
+padding-bottom: 4rem;
 }
 .logo-date{
 font-size: 22px;
@@ -436,9 +450,10 @@ font-size: 22px;
    text-align: center;
     align-items: center;
 }
-habilitis{
+.habilitis{
     min-height: 60%;
-    height: 30vh;
+    min-height: 30vh;
+    padding-bottom: 8rem;
 }
 .bolder{
 font-size: 25px;
@@ -457,22 +472,27 @@ font-size: 45px;
 }
 .habilitis-art{
     font-size: 25px;
+ 
 }
 .about-title-portfolio{
     font-size: 45px;
 }
 .contain-portfolio{
-    flex-direction: row;
+flex-direction: row;
 flex-wrap: wrap;
-width: 100%;
+width: 80%;
 align-content: center;
 align-items: center;
 gap: 3rem;
-margin-left: 18rem;
+
 min-height: 60%;
 }
 .cont-img-portafolio{
-width: 50%;
+min-width: 32%;
+min-height: 32%;
+}
+.img-portfolio{
+  
 }
 .about-title-contact{
     font-size: 45px;
@@ -483,17 +503,20 @@ width: 50%;
 .contain-contact{
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 60%;
+   justify-content: center;
 }
 .contact-art{
     width: 40%;
 }
 .footer{
     align-self: flex-end;
-    margin-left: 20%;
+  
 }
 .separation{
     padding: 0;
+}
+#nav-menu-on{
+    display: none;
 }
 
   }
