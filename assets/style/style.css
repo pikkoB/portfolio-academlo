@@ -30,6 +30,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: #E5E5E5;
 }
 .navbar{
 padding: 1rem 1.5rem;
@@ -89,6 +90,9 @@ padding-bottom: 3rem;
    
     right: 0;
    
+}
+#gold{
+    color: #f1a600;
 }
 
 .about{
@@ -520,5 +524,7 @@ min-height: 32%;
 #nav-menu-on{
     display: none;
 }
-
+#gold{
+    color: #f1a600;
+}
   }
